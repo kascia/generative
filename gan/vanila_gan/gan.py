@@ -17,7 +17,7 @@ slim = tf.contrib.slim
 
 
 batch_size = 60
-noise_size = 10
+noise_size = 100
 data_size = 28*28
 learning_rate = 1e-4
 dropout_rate = 1.0
@@ -174,7 +174,7 @@ def main():
 
         if i % 1000 == 1:
             _global_step = sess.run(global_step)
-            saver.save(sess, checkpoint_dir, global_step = _global_step)
+            saver.save(sess, checkpoint_dir+'model.ckpt', global_step = _global_step)
 
     #samples = sess.run([G], feed_dict={z:noise})
     #save_generated_samples(samples)
