@@ -11,7 +11,7 @@ mnist = input_data.read_data_sets('../../mnist/', one_hot = True)
 
 
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
+os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 layers = tf.contrib.layers
 slim = tf.contrib.slim
 

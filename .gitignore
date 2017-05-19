@@ -1,4 +1,8 @@
 ./mnist/
 ./gan/vanila_gan/train.py
 checkpoints/
+./yaleface/
+./animation/
+./gan/dcgan/utils/
+*.pyc
 
